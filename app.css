@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+    box-shadow: 0px 7px 7px rgba(32, 32, 32, 0.4);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+}
+.nav-buttons {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    height: 70px;
+    width: 450px;
+}
+.learn-btn {
+    background-color: rgb(169, 93, 202);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+.signin-btn {
+    color: rgb(169, 93, 202);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 40px;
+    border: 3px solid rgb(169, 93, 202);
+    border-radius: 25px;
+}
+header {
+    margin-top: 80px;
+    height: 800px;
+    background-image: url(images/header-picture.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    color: white;
+    font-size: 72px;
+    margin-bottom: 70px;
+    width: 1100px;
+    text-align: center;
+}
+.header-text {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 70px;
+    width: 1200px;
+    text-align: center;
+}
+header a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 100px;
+    border-radius: 40px;
+}
+.button-and-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.rating-text {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.general-rating {
+    color: rgb(214, 162, 236);
+    font-size: 95px;
+    font-weight: bold;
+}
+.stars {
+    display: flex;
+    gap: 7px;
+}
+.stars i {
+    font-size: 35px;
+    color: white;
+}
+.rating-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.review {
+    color: rgb(179, 179, 179);
+    font-size: 20px;
+    margin-top: 6px;
+}
+.lang-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.lang-choice h2 {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.lang-list {
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px;
+    gap: 40px 100px;
+}
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+}
+.lang:hover > .lang-name {
+    color: blue;
+}
+.lang:hover {
+    cursor: pointer;
+}
+.lang img {
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.7));
+}
+.lang-name {
+    font-size: 22px;
+}
+.why-lingland {
+    background-color: rgb(243, 224, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.why-lingland h2 {
+    color: rgb(169, 93, 202);
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.lingland-cards {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 30px;
+}
+.card {
+    color: rgb(169, 93, 202);
+    padding: 24px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card i {
+    font-size: 80px;
+    margin-bottom: 45px;
+}
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.card p {
+    font-size: 20px;
+    text-align: center;
+}
+.trust-learners {
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trust-learners h2 {
+    font-size: 50px;
+    margin-bottom: 70px;
+    width: 1000px;
+    text-align: center;
+}
+.comment-collection {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 25px;
+}
+.comment-card {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    padding: 24px 35px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comment-card h3 {
+    margin-bottom: 20px;
+}
+.comment {
+    margin-bottom: 20px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-rating {
+    display: flex;
+    gap: 7px;
+}
+.user-rating i {
+    font-size: 20px;
+    color: rgb(169, 93, 202);
+}
+.username {
+    font-weight: bold;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more p {
+    font-size: 25px;
+    color: rgb(142, 142, 142);
+}
+.partners-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.partners-section h2 {
+    font-size: 50px;
+    margin-top: 40px;
+}
+.partners-section p {
+    font-size: 22px;
+    color: rgb(142, 142, 142);
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+.partners {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    gap: 15px;
+}
+.partner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partner-logo img {
+    height: 140px;
+}
+footer {
+    background-color: rgb(243, 224, 251);
+    color: rgb(169, 93, 202);
+    padding: 40px 120px;
+}
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.join-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.join-text p {
+    font-size: 18px;
+}
+.search-email {
+    display: flex;
+}
+.search-email input {
+    background-color: white;
+    color: rgb(169, 93, 202);
+    font-size: 18px;
+    border: 3px solid rgb(169, 93, 202);
+    border-right: none;
+    padding: 15px 12px;
+    width: 300px;
+}
+.search-email input::placeholder {
+    color: rgb(169, 93, 202);
+}
+.search-email a {
+    background-color: rgb(169, 93, 202);
+    color: white;
+    text-decoration: none;
+    border: 3px solid rgb(169, 93, 202);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+.menu {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.menu-part h4 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.menu-part ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-part ul li a {
+    color: rgb(169, 93, 202);
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu-part ul li a:hover {
+    text-decoration: underline;
+}
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+.social-media a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.brands {
+    color: rgb(169, 93, 202);
+    font-size: 20px;
+}
+.bottom-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
