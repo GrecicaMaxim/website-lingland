@@ -29,7 +29,7 @@ nav {
     width: 450px;
 }
 .learn-btn {
-    background-color: rgb(169, 93, 202);
+    background: linear-gradient(45deg, rgb(90, 9, 125), rgb(188, 84, 253));
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -37,14 +37,23 @@ nav {
     padding: 10px 40px;
     border-radius: 25px;
 }
+.learn-btn:hover {
+    background: linear-gradient(45deg, rgb(140, 58, 192), rgb(223, 153, 255));
+    transition: all 0.3s;
+}
 .signin-btn {
-    color: rgb(169, 93, 202);
+    color: rgb(67, 139, 255);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 7px 40px;
-    border: 3px solid rgb(169, 93, 202);
+    border: 3px solid rgb(67, 139, 255);
     border-radius: 25px;
+}
+.signin-btn:hover {
+    background-color: rgb(67, 139, 255);
+    color: white;
+    transition: 0.3s;
 }
 header {
     margin-top: 80px;
@@ -73,7 +82,7 @@ header h1 {
 }
 header a {
     color: black;
-    background-color: white;
+    background: linear-gradient(45deg, rgb(67, 139, 255), white, white);
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
@@ -156,7 +165,7 @@ header a {
     font-size: 22px;
 }
 .why-lingland {
-    background-color: rgb(243, 224, 251);
+    background: linear-gradient(60deg, rgb(188, 87, 231), rgb(174, 205, 255));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +174,7 @@ header a {
     padding-bottom: 80px;
 }
 .why-lingland h2 {
-    color: rgb(169, 93, 202);
+    color: rgb(134, 28, 179);
     font-size: 50px;
     margin-bottom: 70px;
 }
@@ -175,7 +184,7 @@ header a {
     gap: 30px;
 }
 .card {
-    color: rgb(169, 93, 202);
+    color: rgb(134, 28, 179);
     padding: 24px 35px;
     display: flex;
     flex-direction: column;
@@ -285,8 +294,8 @@ header a {
     height: 140px;
 }
 footer {
-    background-color: rgb(243, 224, 251);
-    color: rgb(169, 93, 202);
+    background-color: rgb(29, 106, 229);
+    color: white;
     padding: 40px 120px;
 }
 .newsletter {
@@ -307,21 +316,21 @@ footer {
 }
 .search-email input {
     background-color: white;
-    color: rgb(169, 93, 202);
+    color: rgb(12, 68, 160);
     font-size: 18px;
-    border: 3px solid rgb(169, 93, 202);
+    border: 5px solid rgb(12, 68, 160);
     border-right: none;
     padding: 15px 12px;
     width: 300px;
 }
 .search-email input::placeholder {
-    color: rgb(169, 93, 202);
+    color: rgb(12, 68, 160);
 }
 .search-email a {
-    background-color: rgb(169, 93, 202);
+    background-color: rgb(12, 68, 160);
     color: white;
     text-decoration: none;
-    border: 3px solid rgb(169, 93, 202);
+    border: 5px solid rgb(12, 68, 160);
     font-size: 18px;
     font-weight: bold;
     padding: 15px 20px;
@@ -342,7 +351,7 @@ footer {
     gap: 10px;
 }
 .menu-part ul li a {
-    color: rgb(169, 93, 202);
+    color: white;
     text-decoration: none;
     font-size: 18px;
 }
@@ -364,7 +373,7 @@ footer {
     text-decoration: none;
 }
 .brands {
-    color: rgb(169, 93, 202);
+    color: rgb(29, 106, 229);
     font-size: 20px;
 }
 .bottom-footer {
@@ -405,6 +414,12 @@ footer {
     background-color: white;
     border: 2px solid #d7d7d7;
 }
+.continue-btn:hover {
+    background-color: #eeeeee;
+    border: 2px solid #cecece;
+    cursor: pointer;
+    transition: 0.3s;
+}
 .signin-form {
     display: flex;
     flex-direction: column;
@@ -434,6 +449,11 @@ footer {
     border: none;
     margin: 5px auto;
 }
+.submit-btn:hover {
+    background-color: rgb(58, 58, 162);
+    cursor: pointer;
+    transition: 0.3s;
+}
 .learn-for-free-body {
     display: flex;
     flex-direction: column;
@@ -455,6 +475,17 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
+.language-card:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #7493aa;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.language-card:hover > .language-users {
+    background-color: #c2d7e7;
+    color: #7493aa;
+    transition: 0.3s;
 }
 .language-card img {
     width: 50px;
@@ -508,4 +539,9 @@ footer {
     font-weight: bold;
     border: none;
     border-radius: 24px;
+}
+.send-btn:hover{
+    background-color: rgb(96, 62, 151);
+    cursor: pointer;
+    transition: 0.3s;
 }
